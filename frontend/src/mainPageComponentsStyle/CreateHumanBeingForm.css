@@ -1,0 +1,136 @@
+.form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    height: 500px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center; */
+    background: linear-gradient(to bottom right, #ff237c, #211bfb);
+    width: 450px;
+    color: #c8e1ff;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 17px;
+}
+
+.form-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.form-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.form-container::-webkit-scrollbar-thumb {
+    background: rgba(209, 192, 255, 0.5);
+    border-radius: 10px;
+}
+
+.form-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(209, 192, 255, 0.8);
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-left: 90px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"], .form-group input[type="number"],
+.form-group select {
+    width: 250px;
+    padding: 5px;
+    border: 1px solid #c8e1ff;
+    border-radius: 4px;
+    height: 20px;
+    background-color: rgb(66, 12, 137, 0.2);
+    color: #c8e1ff;
+    outline: none;
+}
+.form-group select {
+    height: 33px;
+    width: 260px;
+}
+
+.form-group option {
+    background-color: #7300ea;
+    color: aliceblue;
+}
+
+
+.form-group input[type="checkbox"] {
+    background-color: rgb(66, 12, 137, 0.6);
+    border: 1px solid #c8e1ff;
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.submit-button {
+    background-color: #00e2ff;
+    margin-top: 15px;
+    width: 140px;
+    height: 37px;
+    border-radius: 10px;
+    color: rgba(1, 17, 33);
+    font-size: 17px;
+    border: 2px solid black;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, border 0.2s ease, color 0.2s ease, font-size 0.2s ease;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    box-shadow: 0 0 7px #250084;
+    background-color: #30e8ff;
+}
+
+h2 {
+    color: #2f007f;
+    text-align: center;
+}
+
+#car select {
+    border: none;
+    background: transparent;
+}
+
+
+
+.form-group select::-webkit-scrollbar {
+    width: 6px;
+}
+
+.form-group select::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.form-group select::-webkit-scrollbar-thumb {
+    background: rgba(209, 192, 255, 0.5);
+    border-radius: 10px;
+}
+
+.form-group select::-webkit-scrollbar-thumb:hover {
+    background: rgba(209, 192, 255, 0.8);
+}
+.error {
+    color: #d0ff00;
+    font-size: 14px;
+}
+

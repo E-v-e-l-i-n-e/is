@@ -1,0 +1,247 @@
+.burger-menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.burger-button {
+    border: 2px solid black;
+    background-color: rgb(7, 21, 95);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px; /*#4808ff*/
+}
+
+.burger-button:hover, .logout:hover {
+    box-shadow: 0 0 5px rgb(7, 21, 95);
+}
+
+
+.line {
+    width: 35px;
+    height: 4px;
+    background-color: #00e9ff;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+.line.active:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.line.active:nth-child(2) {
+    opacity: 0;
+}
+
+.line.active:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 45px;
+    /* background: linear-gradient(to bottom, #6c68f8, #4605EC); */
+    background: linear-gradient(to bottom, #0fa7ff, #2117ff);
+    border: 2px solid #05007b;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 150px; /* Установите ширину */
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #eef6ff;
+    cursor: pointer;
+    border: none;
+    background: none;
+    text-align: left;
+}
+
+.dropdown-item:hover {
+    border-radius: 10px;
+    background-color: rgba(0, 162, 255, 0.77);
+}
+
+.request-list {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    z-index: 100;
+}
+
+.request-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрирование по вертикали и горизонтали */
+    width: 300px; /* Ширина модального окна */
+    padding: 20px;
+    color: black;
+    font-size: 24px;
+    border: 2px solid black;
+    background: linear-gradient(to bottom, #00ff77, #0080ff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 200;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.request-modal ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.request-modal li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0;
+    padding: 0 5px;
+}
+
+
+.close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.accept-button {
+    background-color: #00ff2a;
+    margin-left: 5px;
+}
+.reject-button {
+    background-color: #ff1a30;
+}
+.accept-button, .reject-button {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 3px 3px 3px rgb(7, 21, 95);
+}
+
+.accept-button:hover, .reject-button:hover {
+    box-shadow: none;
+}
+
+
+.special-operations {
+    position: absolute; /* Используем абсолютное позиционирование */
+    left: 100%; /* Рядом с кнопкой */
+    top: 75px;
+    background: linear-gradient(to bottom, #0fa7ff, #2117ff);; /* Прозрачный фон для удобства видимости */
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    z-index: 1000;
+    border: 2px solid #05007b;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.modal-content h2, .modal-content2 h2 {
+    font-size: 22px;
+}
+.modal-content button, .modal-content2 button {
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 8px;
+        color: rgba(1, 17, 33);
+        font-size: 16px;
+        background-color: #00ff2a;
+        width: 70px;
+        height: 35px;
+        font-family: Helvetica, sans-serif;
+    }
+
+
+.modal-content, .modal-content2 button:hover {
+        background-color: #00ce22;
+}
+
+
+.modal-content {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 2px black;
+}
+
+
+.modal-content2 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 2px black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    padding: 20px;
+    color: black;
+    font-size: 16px;
+    background: linear-gradient(to bottom, #00ff77, #0080ff);
+    z-index: 200;
+    align-items: center;
+}
+
+.minutesOfWaitingSendButton {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100px !important;
+}
+
+.modal-content2 input {
+    height: 25px;
+    width: 190px;
+    background-color: #e3f7ff;
+}
+
+#find-users {
+    width: 80px;
+    margin-top: 5px;
+    margin-left: 100px;
+}
+
+.modal-content h3 {
+    font-size: 22px;
+}
+
+
+.modal-content ul {
+    font-size: 18px;
+}
+
+.find-by-id {
+    margin-left: 25px;
+    text-align: left;
+    font-size: 14px;
+}
