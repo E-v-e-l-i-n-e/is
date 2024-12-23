@@ -1,0 +1,6 @@
+com\backend\lab1\controller\AuthController.class
+com\backend\lab1\entity\User$Role.class
+com\backend\lab1\HelloResource.class
+com\backend\lab1\application\HelloApplication.class
+com\backend\lab1\entity\User$UserBuilder.class
+com\backend\lab1\entity\User.class
